@@ -36,10 +36,6 @@ fun Project.setKotlinCompileOptions() {
         compilerOptions {
             jvmTarget.set(JvmTarget.fromTarget(JAVA_VERSION.toString()))
             freeCompilerArgs.add("-opt-in=kotlin.RequiresOptIn")
-            freeCompilerArgs.add("-opt-in=kotlin.Experimental")
-            freeCompilerArgs.add("-opt-in=kotlinx.coroutines.FlowPreview")
-            freeCompilerArgs.add("-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi")
-            freeCompilerArgs.add("-opt-in=kotlinx.serialization.ExperimentalSerializationApi")
         }
     }
 }
